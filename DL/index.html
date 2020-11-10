@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Archives |  Yu
+     Yu
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -43,51 +43,316 @@
       
     <main class="content on">
       <section class="outer">
-  
-  <article class="articles">
-    
-    
-    <h1 class="page-type-title">Archives</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/11/10/hello-world/" class="archive-article-date">
-  <time datetime="2020-11-10T08:23:26.211Z" itemprop="datePublished">11/10</time>
-</a>
+  <article
+  id="page-"
+  class="article article-type-page"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/11/10/hello-world/"
-    >Hello World</a> 
-</h2>
- 
+    <div class="article-entry" itemprop="articleBody">
+       
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像风格迁移</title>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
+<style type="text/css">
+
+    *{
+        margin:0px;
+        padding:0px;
+    }
+
+    .div1:hover{ transform:scale(1.05,1.05)}
+
+    body {
+        background-image: url("bg3.jpg");
+        background-size: cover;
+        height: 1000px;
+    }
+
+    .div1 {
+        width: 300px;
+        height: 300px;
+        background-repeat: false;
+    }
+	
+	.div1 .file {
+		width: 300px;
+        height: 300px;
+        opacity: 0;
+	}
+
+</style>
+</head>
+<body>
+
+<div style="float: left;width: 300px;height: 350px;margin: 16% 0% 0% 10%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile1" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form> 
+</div>
+
+<div style="float: left;width: 300px;height: 350px;margin: 16% 0% 0% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile2" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 350px;margin: 16% 0% 0% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile3" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 0% 10%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile4" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 0% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile5" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 0% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile6" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 15% 10%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile7" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 15% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile8" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<div style="float: left;width: 300px;height: 320px;margin: 10% 0% 15% 17%;text-align: center;">
+<form onsubmit="return PostData()">
+    <div class="div1" style="background-image: url('img/1.jpg');"><input class="file" type="file" id="inputfile9" multiple="multiple" onchange="imgbase()"></div>
+    <input type="submit" value="提交" style="height: 50px;width: 50px;background-color:rgb(126, 130, 142);color: white;font-size: 15px;border: none;outline: none;" />
+</form>
+</div>
+
+<br/>
+
+<img src="" id="img" style="display: None;">
+<a href="" style="display: None;"></a>
+<br/>
+
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+    //需要往后端传的bese64格式图片
+    var base64img;
+    //风格索引
+    var index;
+
+    //图片转base64
+    function imgbase() {
+        for (var i = 1; i <= 9; i++) {
+            if (document.getElementById("inputfile"+i).files[0]!=null) {
+                //alert(i);
+                index = i;
+                var file = document.getElementById("inputfile"+i).files[0];
+            }
+        }
+        
+        // 声明js的文件流
+        var reader = new FileReader();
+        if (file) {
+            //通过文件流将文件转换成Base64字符串
+            reader.readAsDataURL(file);
+            reader.onloadend = function () {
+                // 把转换过得base赋值给全局变量
+                // 这里reader.result就是转换好的bsae64格式图片
+                base64img = reader.result;
+            }
+        }
+        
+        // console.log(base64img);
+		//$('#btn').submit();
+
+    }
+	
+    // 异步提交表单，使提交后页面不刷新
+	function PostData(){
+	var img = {"index": index, "img": base64img};
+		
+        $.ajax({
+            url: "http://127.0.0.1:5000/python/zifuhua",
+            type: "POST",
+            contentType: "application/json;charset=UTF-8",
+            data: JSON.stringify(img),
+                
+            dataType:"json",
+            success: function (result) {
+                //$("#img").attr("src", "data:image/png;base64," + result.pic);
+				//$('#img').show();
+				
+				// 自动下载图片
+				var alink = document.createElement("a");
+				alink.href = "data:image/png;base64," + result.pic;
+				alink.download = "result.jpg";
+				alink.click();
+                window.location.reload();   // 刷新当前页面，清除上传的文件记录
+            },
+            error: function (xhr) {
+                //alert(xhr.responseText);
+                alert("请点击图片进行上传");
+            }
+        });
+		return false;
+	}
+
+</script>
+
+</body>
+</html> 
+      <!-- reward -->
       
     </div>
-  </div>
-  
-  
+    
 
-  
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/DL/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
