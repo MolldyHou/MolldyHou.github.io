@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>照片墙案例</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<style type="text/css">
+	body
+	{
+        /* background-image: url("bg3.jpg");
+        background-size: cover; */
+        background-color: rgb(121, 127, 139);/*背景色*/
+		text-align: center;/*照片居中*/
+        text-align: center;/*照片居中*/
+	}
+    a {
+        text-decoration: none;
+    }
+	img{
+			width: 12%;/*设置高度*/
+			padding: 10px;/*设置内边距*/
+			background-color: white;/*设置照片背景色*/
+			transform: rotate(-10deg);/*设置倾斜角度*/
+			margin: 20px;/*设置内边距*/
+		}
+		img:hover{
+			transform: rotate(0deg); scale(2.5);/*设置旋转角度和缩放比例*/
+			z-index: 1;/*设置显示优先级别*/
+			transition: 1s;/*是指显示时间*/
+		}
+	</style>
+	<body>
+		<a href="BeiJing/BeiJing.html">
+            <img src="BeiJing/img/1.jpg" alt="" title="北京 2019.07"/>
+		</a>
+		
+        <a href="Wild_Animal_Park/Wild_Animal_Park.html">
+            <img src="Wild_Animal_Park/img/1.jpg" alt="" title="上海野生动物园 2020.11"/>
+        </a>
+        
+        <br /><br />
+
+	</body>
+
+</html>
